@@ -1,0 +1,186 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap%22");
+
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  border: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* --- Estilos --- */
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: #F2F2F2;
+    /* overflow-x: hidden; */
+    overflow-y: scroll;
+}
+
+/* Página incício */
+
+.inicio {
+    width: 100%;
+    height: calc(100vh - 80px);
+    min-width: 999px;
+    background: no-repeat center/cover url('./images/background.png'); 
+    border: 0;
+    border-radius: 0 0 4em 4em;
+    margin-bottom: 3.4em;
+}
+
+.conteudo-inicio {
+    display: flex;
+    position: relative;
+}
+
+.texto-inicio {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    color: #ffff;
+    font-family: 'Poppins', sans-serif;
+    margin: 12em 9%;
+    padding: 1%;
+    width: 40em;
+    background: radial-gradient(rgba(0, 0, 0, 0.432), rgba(1, 1, 1, 0));
+    border-radius: 12px;
+}
+
+.texto-inicio h1 {
+    font-size: 36pt;
+}
+
+.conteudo-inicio img {
+    position: absolute;
+    right: 0;
+    min-width: 100vh;
+}
+
+li, a, button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffff;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    /* overflow: hidden;
+    position: fixed; */
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(rgba(1, 1, 1, 1),rgba(1, 1, 1, 0));
+    width: 100%;
+    height: 9vh;
+    padding: 30px 10%;
+}
+
+.logo {
+    display: flex;
+    margin-right: auto;
+    cursor: pointer;
+    align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list li {
+    display: inline-block;
+    letter-spacing: 1.5px;
+    padding: 0px 20px;
+}
+
+.nav-list li a {
+    transition: all 0.8s ease 0s;
+}
+
+.nav-list li a:hover {
+    opacity: 0.7;
+    color: #2DB071;
+}
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: #2DB071;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    transition-duration: 0.5s;
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Página Sobre */
+.sobre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F2F2F2;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    width: 662px;
+    height: 800px;
+    justify-content: center;
+    margin: 25px 0;
+    padding-left: 40px;
+}
+
+.texto h1 {
+    font-size: 2.5em;
+    text-align: center;
+    justify-content: center;
+}
+
+.texto p {
+    font-size: 2em;
+    font-weight: 450;
+    text-align: center;
+}
+.texto hr {
+    margin: 0 auto 15px auto;
+    border-top: 4px solid rgb(235, 235, 235);
+    border-radius: 50px;
+    height: 4px;
+    width: 18%;
+}
+
+.texto p span {
+    color: rgb(11, 158, 87);
+    text-align: center;
+}
+
+.imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 662px;
+    height: 800px;
+    margin: 25px;
+}
+
+.imagem img {
+    width: 662px;
+    height: 452px;
+    /* margin-top: 20px; */
+    padding-right: 55px;
+    border-right: 3px solid;
+    border-image: linear-gradient(to top,rgba(0, 0, 0, 0), rgb(230, 230, 230), rgba(0, 0, 0, 0)) 1 100%;
+}
+
+/* Página download */
