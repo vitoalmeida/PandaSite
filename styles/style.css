@@ -28,7 +28,7 @@ body {
     width: 100%;
     height: calc(100vh - 80px);
     min-width: 999px;
-    background: no-repeat center/cover url('./images/background.png'); 
+    background: no-repeat center/cover url('../images/background.png'); 
     border: 0;
     border-radius: 0 0 4em 4em;
     margin-bottom: 3.4em;
