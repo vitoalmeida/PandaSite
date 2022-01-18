@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panda</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body> 
     <div class="inicio">
-        <header>
+        <header class="navbar">
             <a class="logo" href="/"><img src="./images/logo.png" alt="logo"/></a>
             <nav>
                 <ul class="nav-list">
@@ -20,7 +22,7 @@
             </nav>
             <a href="#baixar"><button>Baixar</button></a>
         </header>
-        <div class="conteudo-inicio">
+        <div id="inicio" class="conteudo-inicio">
             <div class="texto-inicio">
                 <h2>Tenha novamente</h2>
                 <h1>Controle sobre sua vida financeira!</h1>
@@ -29,6 +31,7 @@
         </div>
     </div>
     <section id="sobre" class="sobre">
+        <div class="circle"></div>
         <div class="imagem">
             <img src="./images/sobre.png">
         </div>
@@ -39,12 +42,36 @@
             <p>Defina seus próprios limites de gastos, crie avisos para despesas fora do comum e <span>muito mais</span>!</p>
         </div>
     </section>
-    <section class="download">
-        <div>
-            
+    <section id="baixar" class="download">
+        <div class="texto-download">
+            <h1>Baixe o aplicativo!</h1>
+            <h2>Escaneie o QR-Code abaixo<br> e baixe agora nosso aplicativo!</h2>
+            <img src="./images/qr-code.png">
+        </div>
+        <div class="img-download">
+            <img src="./images/celphone.png">
         </div>
     </section>
-
+    <footer class="footer">
+        <div class="footer-left"> 
+            <img src="./images/name.png" alt="footer-logo">
+        </div>
+        <div class="footer-right">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p>&copy Panda 2021, All Rights Reserved</p>
+    </div>
+        <div class="container">
+          <div class="img-inner">
+            <div class="inner-skew">
+            </div>
+          </div>
+        </div>
     <script src="script.js"></script>
 </body>
 </html>
