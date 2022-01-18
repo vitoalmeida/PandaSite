@@ -19,12 +19,12 @@ A intenção com este site é converter as visitas em downloads da aplicação.
 
 
 <!-- TECHNOLOGIES -->
-## :hammer: Feito Com
+## :construction: Feito Com
 Segue abaixo o que foi utilizado na criação deste aplicativo:
 
 
 - :construction_worker: HTML
-- :lipstick: CSS
+- :art: CSS
 - :wrench: JavaScript
 
 <!-- DEMONSTRATION -->
