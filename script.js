@@ -1,18 +1,43 @@
 var prevScrollpos = window.pageYOffset;
+var navBar = document.querySelector(".navbar");
 
-window.onscroll = function() {
+var sobre = document.querySelector(".sobre")
+var sobreImagem = document.querySelector(".imagem");
+var sobreTexto = document.querySelector(".texto");
+
+var download = document.querySelector(".download");
+var downloadImagem = document.querySelector(".img-download");
+var downloadTexto = document.querySelector(".texto-download");
+
+window.onscroll = () => {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.querySelector(".navbar").style.top = "0"; 
+    navBar.style.top = "0"; 
   } else {
-    document.querySelector(".navbar").style.top = "-5.2rem";
+    navBar.style.top = "-5.2rem";
   }
   prevScrollpos = currentScrollPos;
 
-  if(window.scrollY > document.querySelector(".navbar").clientHeight*2) {
-    document.querySelector(".navbar").style.background = "#000000"; 
-    document.querySelector(".navbar").style.transition = "0.6s";  
-  }else{
-    document.querySelector(".navbar").style.background = "linear-gradient(      #000000, #00000000)";  
+  if(window.scrollY > navBar.clientHeight*2) {
+    navBar.style.background = "#000000"; 
+    navBar.style.transition = "0.6s";  
+  } else{
+    navBar.style.background = "linear-gradient(      #000000, #00000000)";  
+  }
+
+  if(window.scrollY > sobre.clientHeight*0.3 && window.scrollY < sobre.clientHeight*1.7) {
+    sobreImagem.classList.add('fade-sobre');
+    sobreTexto.classList.add('fade-sobre');
+  } else {
+    sobreImagem.classList.remove('fade-sobre');
+    sobreTexto.classList.remove('fade-sobre');
+  }
+  
+  if(window.scrollY > download.clientHeight*1.8) {
+    downloadImagem.classList.add('slide-download');
+    downloadTexto.classList.add('fade-download');
+  } else {
+    downloadImagem.classList.remove('slide-download');
+    downloadTexto.classList.remove('fade-download');
   }
 }

@@ -6,14 +6,14 @@
   </a>
 <br>
 <br>
-Paper Plane
+Site Panda
 </h1>
 
 
 <!-- ABOUT THE PROJECT -->
 ## :bulb: Sobre o Projeto
 
-Este projeto trata-se de um site para apresentar um aplicativo de organização financeira chamado Panda.
+Este projeto trata-se de um site em página única, para apresentar um aplicativo de organização financeira chamado Panda.
 
 A intenção com este site é converter as visitas em downloads da aplicação.
 
@@ -31,14 +31,11 @@ Segue abaixo o que foi utilizado na criação deste aplicativo:
 ## :alembic: Demonstração
 Para ilustrar melhor o projeto, abaixo estão algumas demonstrações:
 
-### Tela de cadastro
-![Alt Text](https://i.giphy.com/media/Hfii87HCShbSAgTt18/giphy.webp)
+### Tela inicial
+![Alt Text](https://media.giphy.com/media/jZ0qD1bAQ3pYLdxuLL/giphy.gif)
 
-### Tela de login
-![Alt Text](https://media.giphy.com/media/JFpUFUX3hdRsMZNvTB/giphy.gif)
-
-### Telas de navegação
-![Alt Text](https://media.giphy.com/media/6Xyz15mnW4fVQGUJ0j/giphy.gif)
+### Navegando no site
+![Alt Text](https://media.giphy.com/media/gorX2GnmUHdjO1tfy1/giphy.gif)
 
 <!-- CONTACT -->
 ## :speech_balloon: Contato

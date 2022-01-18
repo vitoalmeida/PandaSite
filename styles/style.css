@@ -22,7 +22,21 @@ body {
   overflow-y: scroll;
 }
 
+main {
+  overflow-y: hidden;
+}
+
 /* Página incício */
+
+li,
+a,
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffff;
+  text-decoration: none;
+}
 
 .inicio {
   width: 100%;
@@ -41,6 +55,11 @@ body {
 }
 
 .texto-inicio {
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
   display: flex;
   position: absolute;
   flex-direction: column;
@@ -63,17 +82,11 @@ body {
   min-width: 100vh;
 }
 
-li,
-a,
-button {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #ffff;
-  text-decoration: none;
-}
-
 .navbar {
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transform: translateY(-80px);
   display: flex;
   overflow: hidden;
   position: fixed;
@@ -134,7 +147,25 @@ button {
 button:hover {
   transition-duration: 0.5s;
   transform: scale(1.1);
-  opacity: 0.8;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Página Sobre */
@@ -147,6 +178,7 @@ button:hover {
 }
 
 .texto {
+  opacity: 0;
   display: flex;
   flex-direction: column;
   width: 662px;
@@ -156,6 +188,7 @@ button:hover {
   padding-left: 40px;
   padding-right: 25px;
   max-height: 800px;
+  transition: 1s;
 }
 
 .texto h1 {
@@ -183,12 +216,19 @@ button:hover {
 }
 
 .imagem {
+  opacity: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 662px;
   height: 800px;
   margin: 25px;
+  transition: 1s;
+}
+
+.fade-sobre {
+  opacity: 1;
+  transition: 1.2s;
 }
 
 .imagem img {
@@ -217,6 +257,7 @@ button:hover {
 
 .texto-download {
   /* background-color: brown; */
+  opacity: 0;
   display: flex;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
@@ -225,6 +266,7 @@ button:hover {
   align-items: center;
   margin: auto 0;
   padding-left: 200px;
+  transition: 1s;
 }
 
 .texto-download h1 {
@@ -241,7 +283,7 @@ button:hover {
   font-size: 18pt;
 }
 
-.texto-download img{
+.texto-download img {
   width: 18rem;
   border: 0.5rem solid white;
   border-radius: 35px;
@@ -250,15 +292,31 @@ button:hover {
 
 .img-download {
   /* background-color: wheat; */
-    display: flex;
-    align-items: center;
-    width: 50%;
+  opacity: 1;
+  
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  transform: translateY(800px);
+}
+
+.fade-download {
+  opacity: 1;
+  transition: 1.2s;
+}
+
+.slide-download {
+  opacity: 1;
+  transition: 1s;
+  transition-timing-function: ease;
+  transform: translateY(0);
 }
 
 .img-download img {
-    margin-left: 15%;
-    max-width: 600px;
-    margin-bottom: 200px;
+  margin-left: 15%;
+  max-width: 600px;
+  margin-bottom: 200px;
 }
 
 /* Rodapé */
@@ -277,7 +335,7 @@ button:hover {
   margin-right: auto;
 }
 
-.footer-left img{
+.footer-left img {
   width: 6rem;
 }
 
